@@ -1,9 +1,9 @@
-import { title } from "@/components/primitives";
+import React from 'react'
 
-export default function Page() {
-	return (
-		<div>
-			<h1 className={title()}>About</h1>
-		</div>
-	);
+const Page = () => {
+  return (
+	<div>Page</div>
+  )
 }
+
+export default Page

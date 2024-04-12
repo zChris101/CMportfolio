@@ -10,28 +10,6 @@ export const siteConfig = {
     },
     {
       label: "About",
-      href: "/docs",
-    },
-    {
-      label: "Skills",
-      href: "/pricing",
-    },
-    {
-      label: "Projects",
-      href: "/blog",
-    },
-    {
-      label: "Blog",
-      href: "/about",
-    },
-  ],
-  navMenuItems: [
-    {
-      label: "Home",
-      href: "/",
-    },
-    {
-      label: "About",
       href: "/about",
     },
     {
@@ -42,8 +20,12 @@ export const siteConfig = {
       label: "Projects",
       href: "/projects",
     },
-  
+    {
+      label: "Blog",
+      href: "/blog",
+    },
   ],
+
   links: {
     github: "https://github.com/nextui-org/nextui",
     twitter: "https://twitter.com/getnextui",

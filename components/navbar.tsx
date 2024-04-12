@@ -30,8 +30,6 @@ import {
 import { Logo } from "@/components/icons";
 
 export const Navbar = () => {
-
-
   return (
     <NextUINavbar maxWidth="xl" position="sticky">
       <NavbarContent className="basis-1/5 sm:basis-full" justify="start">
@@ -75,7 +73,6 @@ export const Navbar = () => {
           </Link>
           <ThemeSwitch />
         </NavbarItem>
-        
       </NavbarContent>
 
       <NavbarContent className="sm:hidden basis-1 pl-4" justify="end">
@@ -87,20 +84,13 @@ export const Navbar = () => {
       </NavbarContent>
 
       <NavbarMenu>
-        
         <div className="mx-4 mt-2 flex flex-col gap-2">
           {siteConfig.navItems.map((item, index) => (
             <NavbarMenuItem key={`${item}-${index}`}>
               <Link
-                color={
-                  index === 2
-                    ? "primary"
-                    : index === siteConfig.navMenuItems.length - 1
-                    ? "danger"
-                    : "foreground"
-                }
                 href={item.href}
                 size="lg"
+                
               >
                 {item.label}
               </Link>
