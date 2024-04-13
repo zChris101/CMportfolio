@@ -24,7 +24,7 @@ export default function Home() {
       <div className="flex gap-3">
         <Link
           isExternal
-          href={siteConfig.links.docs}
+          href=""
           className={buttonStyles({
             color: "primary",
             radius: "full",
@@ -36,7 +36,7 @@ export default function Home() {
         <Link
           isExternal
           className={buttonStyles({ variant: "bordered", radius: "full" })}
-          href={siteConfig.links.github}
+          href=""
         >
           <GithubIcon size={20} />
           GitHub

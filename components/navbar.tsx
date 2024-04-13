@@ -32,6 +32,9 @@ import {
 import { Logo } from "@/components/icons";
 import { useState } from "react";
 import DropDownToggle from "./DropDownToggle";
+import { BsGithub } from "react-icons/bs";
+import { FaLinkedin } from "react-icons/fa6";
+import { BsDiscord } from "react-icons/bs";
 
 export const Navbar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -42,10 +45,13 @@ export const Navbar = () => {
         <NavbarBrand as="li" className="gap-3 max-w-fit">
           <NextLink className="flex justify-start items-center gap-1" href="/">
             <Logo />
-            <p className="font-bold text-inherit">ACME</p>
+            <p className="font-bold text-inherit">C. MUSICO</p>
           </NextLink>
         </NavbarBrand>
-        <ul className="hidden sm:flex gap-4 justify-start ml-2">
+      </NavbarContent>
+
+      <NavbarContent justify="center">
+        <ul className="hidden sm:flex gap-4 ml-2">
           {siteConfig.navItems.map((item) => (
             <NavbarItem key={item.href}>
               <NextLink
@@ -67,42 +73,79 @@ export const Navbar = () => {
         className="hidden sm:flex basis-1/5 sm:basis-full"
         justify="end"
       >
-        <NavbarItem className="hidden sm:flex gap-2">
-          <Link isExternal href={siteConfig.links.twitter} aria-label="Twitter">
-            <TwitterIcon className="text-default-500" />
-          </Link>
-          <Link isExternal href={siteConfig.links.discord} aria-label="Discord">
-            <DiscordIcon className="text-default-500" />
-          </Link>
-          <Link isExternal href={siteConfig.links.github} aria-label="Github">
-            <GithubIcon className="text-default-500" />
-          </Link>
-          <ThemeSwitch />
-        </NavbarItem>
+        <Button
+          as={Link}
+          href=""
+          variant="light"
+          isIconOnly
+          color="default"
+          radius="md"
+          size="lg"
+        >
+          <FaLinkedin size={22} />
+        </Button>
+        <Button
+          as={Link}
+          href=""
+          variant="light"
+          isIconOnly
+          color="default"
+          radius="md"
+          size="lg"
+        >
+          <BsDiscord size={22} />
+        </Button>
+        <Button
+          as={Link}
+          href=""
+          variant="light"
+          isIconOnly
+          color="default"
+          radius="md"
+          size="lg"
+        >
+          <BsGithub size={22} />
+        </Button>
+        <ThemeSwitch />
       </NavbarContent>
 
-      <NavbarContent className="sm:hidden basis-1 pl-4" justify="end">
-        <Link isExternal href={siteConfig.links.github} aria-label="Github">
-          <GithubIcon className="text-default-500" />
-        </Link>
+      <NavbarContent className="sm:hidden basis-1 pl-4 gap-0" justify="end">
+        <Button
+          as={Link}
+          href=""
+          variant="light"
+          isIconOnly
+          color="default"
+          radius="md"
+          size="sm"
+        >
+          <FaLinkedin size={22} />
+        </Button>
+        <Button
+          as={Link}
+          href=""
+          variant="light"
+          isIconOnly
+          color="default"
+          radius="md"
+          size="sm"
+        >
+          <BsDiscord size={22} />
+        </Button>
+        <Button
+          as={Link}
+          href=""
+          variant="light"
+          isIconOnly
+          color="default"
+          radius="md"
+          size="sm"
+        >
+          <BsGithub size={22} />
+        </Button>
         <ThemeSwitch />
         <DropDownToggle />
-        {/* Navbarmenu */}
-        {/* <NavbarMenuToggle
-        /> */}
       </NavbarContent>
-
-      {/* <NavbarMenu>
-        <div className="mx-4 mt-2 flex flex-col gap-2">
-          {siteConfig.navItems.map((item, index) => (
-            <NavbarMenuItem key={`${item}-${index}`}>
-              <Link href={item.href} size="lg">
-                {item.label}
-              </Link>
-            </NavbarMenuItem>
-          ))}
-        </div>
-      </NavbarMenu> */}
     </NextUINavbar>
   );
 };
