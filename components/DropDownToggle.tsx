@@ -18,32 +18,42 @@ import { SiBloglovin } from "react-icons/si";
 
 const DropDownToggle = () => {
   const iconSelector = (label: string) => {
+
+  const iconClasses = "text-xl text-default-500 pointer-events-none flex-shrink-0";
+
+
     switch (label) {
       case "Home":
-        return <AiFillHome size={22} />;
+        return <AiFillHome size={22} className={iconClasses} />;
 
       case "About":
-        return <CgProfile size={22} />;
+        return <CgProfile size={22} className={iconClasses}/>;
 
       case "Skills":
-        return <GiSkills size={22} />;
+        return <GiSkills size={22} className={iconClasses}/>;
 
       case "Projects":
-        return <GoProjectSymlink size={22} />;
+        return <GoProjectSymlink size={22} className={iconClasses}/>;
 
       case "Blog":
-        return <SiBloglovin size={22} />;
+        return <SiBloglovin size={22} className={iconClasses}/>;
     }
   };
 
   return (
-    <Dropdown>
+    <Dropdown 
+    className="shadow-xl"
+    backdrop="blur"
+    >
       <DropdownTrigger>
         <Button variant="light" isIconOnly color="default" radius="md">
           <RxDropdownMenu size={30} />
         </Button>
       </DropdownTrigger>
-      <DropdownMenu aria-label="Link Actions">
+      <DropdownMenu 
+      aria-label="Link Actions"
+      variant="flat"
+      >
         {siteConfig.navItems.map((item) => (
           <DropdownItem
             href={item.href}

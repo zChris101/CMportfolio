@@ -70,7 +70,7 @@ export const Navbar = () => {
       </NavbarContent>
 
       <NavbarContent
-        className="hidden sm:flex basis-1/5 sm:basis-full"
+        className="hidden sm:flex basis-1/5 sm:basis-full gap-1"
         justify="end"
       >
         <Button
@@ -109,7 +109,7 @@ export const Navbar = () => {
         <ThemeSwitch />
       </NavbarContent>
 
-      <NavbarContent className="sm:hidden basis-1 pl-4 gap-0" justify="end">
+      <NavbarContent className="sm:hidden basis-1 pl-4 gap-2" justify="end">
         <Button
           as={Link}
           href=""
