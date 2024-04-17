@@ -13,7 +13,7 @@ export default function Home() {
       <div className="
        border-3
        w-full
-       h-screen
+       h-dvh
       "
       >
 
