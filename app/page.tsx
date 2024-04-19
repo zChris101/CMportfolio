@@ -20,7 +20,21 @@ export default function Home() {
       <div className="">
         <span className="text-right">Hello, My name is</span>
       </div>
-      <h1 className="font-bold text-4xl mt-5">Christian Musico</h1>
+      <h1
+        className="
+      font-bold 
+      text-4xl 
+      mt-5 
+      bg-gradient-to-r 
+      from-primary
+      to-danger
+      bg-clip-text
+      text-transparent
+      "
+      >
+        Christian Musico
+      </h1>
+      
       <h2>NextJs | React Web Developer</h2>
 
       <HomeNav />
