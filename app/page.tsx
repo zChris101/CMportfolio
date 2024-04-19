@@ -6,19 +6,24 @@ import { siteConfig } from "@/config/site";
 import { title, subtitle } from "@/components/primitives";
 import { GithubIcon } from "@/components/icons";
 import { Image } from "@nextui-org/image";
+import HomeNav from "@/components/HomeNav";
 
 export default function Home() {
   return (
-    <div>
-      <div className="
-       border-3
-       w-full
-       h-dvh
-      "
-      >
+    <div
+      className="
+      flex
+      flex-col
+      items-center
+    "
+    >
+      <span>Hello, I am</span>
+      <h1 className="font-bold text-6xl">
+        Christian Musico
+      </h1>
+      <h2>NextJs | React Web Developer</h2>
 
-      </div>
-     
+      <HomeNav />
     </div>
   );
 }
