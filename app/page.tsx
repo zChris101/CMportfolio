@@ -17,10 +17,10 @@ export default function Home() {
       items-center
     "
     >
-      <span>Hello, I am</span>
-      <h1 className="font-bold text-6xl">
-        Christian Musico
-      </h1>
+      <div className="">
+        <span className="text-right">Hello, My name is</span>
+      </div>
+      <h1 className="font-bold text-4xl mt-5">Christian Musico</h1>
       <h2>NextJs | React Web Developer</h2>
 
       <HomeNav />
