@@ -17,19 +17,22 @@ export default function Home() {
       items-center
     "
     >
-      <div className="">
+      <div className="mb-3">
         <span className="text-right">Hello, My name is</span>
       </div>
       <h1
         className="
-      font-bold 
-      text-4xl 
-      mt-5 
-      bg-gradient-to-r 
-      from-primary
-      to-danger
-      bg-clip-text
-      text-transparent
+        text-3xl 
+        font-extrabold 
+        bg-gradient-to-r 
+        from-orange-700 
+        via-blue-500 
+        to-green-400 
+        text-transparent 
+        bg-clip-text 
+        bg-300% 
+        animate-gradient
+       
       "
       >
         Christian Musico
