@@ -44,7 +44,6 @@ export const Navbar = () => {
       <NavbarContent className="basis-1/5 sm:basis-full" justify="start">
         <NavbarBrand as="li" className="gap-3 max-w-fit">
           <NextLink className="flex justify-start items-center gap-1" href="/">
-            <Logo />
             <p className="font-bold text-inherit">C. MUSICO</p>
           </NextLink>
         </NavbarBrand>
@@ -73,76 +72,10 @@ export const Navbar = () => {
         className="hidden sm:flex basis-1/5 sm:basis-full gap-1"
         justify="end"
       >
-        <Button
-          as={Link}
-          href=""
-          variant="light"
-          isIconOnly
-          color="default"
-          radius="md"
-          size="lg"
-        >
-          <FaLinkedin size={22} />
-        </Button>
-        <Button
-          as={Link}
-          href=""
-          variant="light"
-          isIconOnly
-          color="default"
-          radius="md"
-          size="lg"
-        >
-          <BsDiscord size={22} />
-        </Button>
-        <Button
-          as={Link}
-          href=""
-          variant="light"
-          isIconOnly
-          color="default"
-          radius="md"
-          size="lg"
-        >
-          <BsGithub size={22} />
-        </Button>
         <ThemeSwitch />
       </NavbarContent>
 
       <NavbarContent className="sm:hidden basis-1 pl-4 gap-2" justify="end">
-        <Button
-          as={Link}
-          href=""
-          variant="light"
-          isIconOnly
-          color="default"
-          radius="md"
-          size="sm"
-        >
-          <FaLinkedin size={22} />
-        </Button>
-        <Button
-          as={Link}
-          href=""
-          variant="light"
-          isIconOnly
-          color="default"
-          radius="md"
-          size="sm"
-        >
-          <BsDiscord size={22} />
-        </Button>
-        <Button
-          as={Link}
-          href=""
-          variant="light"
-          isIconOnly
-          color="default"
-          radius="md"
-          size="sm"
-        >
-          <BsGithub size={22} />
-        </Button>
         <ThemeSwitch />
         <DropDownToggle />
       </NavbarContent>

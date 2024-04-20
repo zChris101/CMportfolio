@@ -1,3 +1,5 @@
+'use client'
+
 import { Link } from "@nextui-org/link";
 import { Snippet } from "@nextui-org/snippet";
 import { Code } from "@nextui-org/code";
@@ -7,6 +9,7 @@ import { title, subtitle } from "@/components/primitives";
 import { GithubIcon } from "@/components/icons";
 import { Image } from "@nextui-org/image";
 import HomeNav from "@/components/HomeNav";
+import NaviBar from "@/components/NaviBar";
 
 export default function Home() {
   return (
@@ -22,7 +25,7 @@ export default function Home() {
       </div>
       <h1
         className="
-        text-3xl 
+        text-4xl 
         font-extrabold 
         bg-gradient-to-r 
         from-orange-700 
@@ -32,7 +35,7 @@ export default function Home() {
         bg-clip-text 
         bg-300% 
         animate-gradient
-       
+        md:text-7xl
       "
       >
         Christian Musico
@@ -40,7 +43,7 @@ export default function Home() {
       
       <h2>NextJs | React Web Developer</h2>
 
-      <HomeNav />
+      <NaviBar />
     </div>
   );
 }
