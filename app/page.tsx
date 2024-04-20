@@ -17,12 +17,12 @@ export default function Home() {
       items-center
     "
     >
-      <div className="mb-3">
+      <div className="">
         <span className="text-right">Hello, My name is</span>
       </div>
       <h1
         className="
-        text-3xl 
+        text-4xl 
         font-extrabold 
         bg-gradient-to-r 
         from-orange-700 
