@@ -17,7 +17,7 @@ export default function Home() {
       items-center
     "
     >
-      <div className="">
+      <div className="mb-3">
         <span className="text-right">Hello, My name is</span>
       </div>
       <h1
@@ -40,7 +40,7 @@ export default function Home() {
       
       <h2>NextJs | React Web Developer</h2>
 
-      <HomeNav />
+  
     </div>
   );
 }

@@ -109,39 +109,6 @@ export const Navbar = () => {
       </NavbarContent>
 
       <NavbarContent className="sm:hidden basis-1 pl-4 gap-2" justify="end">
-        <Button
-          as={Link}
-          href=""
-          variant="light"
-          isIconOnly
-          color="default"
-          radius="md"
-          size="sm"
-        >
-          <FaLinkedin size={22} />
-        </Button>
-        <Button
-          as={Link}
-          href=""
-          variant="light"
-          isIconOnly
-          color="default"
-          radius="md"
-          size="sm"
-        >
-          <BsDiscord size={22} />
-        </Button>
-        <Button
-          as={Link}
-          href=""
-          variant="light"
-          isIconOnly
-          color="default"
-          radius="md"
-          size="sm"
-        >
-          <BsGithub size={22} />
-        </Button>
         <ThemeSwitch />
         <DropDownToggle />
       </NavbarContent>
