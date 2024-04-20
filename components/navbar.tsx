@@ -72,39 +72,6 @@ export const Navbar = () => {
         className="hidden sm:flex basis-1/5 sm:basis-full gap-1"
         justify="end"
       >
-        <Button
-          as={Link}
-          href=""
-          variant="light"
-          isIconOnly
-          color="default"
-          radius="md"
-          size="lg"
-        >
-          <FaLinkedin size={22} />
-        </Button>
-        <Button
-          as={Link}
-          href=""
-          variant="light"
-          isIconOnly
-          color="default"
-          radius="md"
-          size="lg"
-        >
-          <BsDiscord size={22} />
-        </Button>
-        <Button
-          as={Link}
-          href=""
-          variant="light"
-          isIconOnly
-          color="default"
-          radius="md"
-          size="lg"
-        >
-          <BsGithub size={22} />
-        </Button>
         <ThemeSwitch />
       </NavbarContent>
 
