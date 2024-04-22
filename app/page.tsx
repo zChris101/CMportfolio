@@ -13,6 +13,8 @@ import NaviBar from "@/components/NaviBar";
 
 export default function Home() {
   return (
+    <div className="container mx-auto max-w-7xl pt-16 px-6 flex-grow">
+      
     <div
       className="
       flex
@@ -44,6 +46,7 @@ export default function Home() {
       <h2>NextJs | React Web Developer</h2>
 
       <NaviBar />
+    </div>
     </div>
   );
 }
