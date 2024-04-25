@@ -39,11 +39,11 @@ export default function RootLayout({
 						<main className="">
 							{children}
 						</main>
-						<footer className="w-full flex items-center justify-center py-12">
-							<HomeNav />
-						</footer>
+						
 					</div>
+					
 				</Providers>
+				
 			</body>
 		</html>
 	);

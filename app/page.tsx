@@ -46,6 +46,9 @@ export default function Home() {
       <h2>NextJs | React Web Developer</h2>
 
       <NaviBar />
+      <footer className="w-full flex items-center justify-center py-12">
+				<HomeNav />
+			</footer>
     </div>
     </div>
   );
