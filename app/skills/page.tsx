@@ -33,7 +33,14 @@ export default function BlogPage() {
             <li>C#</li>
           </ul>
         </div>
-		<br />
+        <br />
+        <div>
+          <h1 className="ml-6">Fullstack Framework</h1>
+          <ul className="flex flex-row gap-2 justify-center">
+            <li>NextJS</li>
+          </ul>
+        </div>
+        <br />
         <div className="">
           <h1 className="ml-6">FrontEnd Tools</h1>
           <ul className="grid grid-cols-4 gap-2 mx-6">
@@ -41,14 +48,14 @@ export default function BlogPage() {
             <li>CSS</li>
             <li>SASS</li>
             <li>Tailwind</li>
-            <li>ShadCN UI</li>
-            <li>Next UI</li>
+            <li>ShadcnUI</li>
+            <li>NextUI</li>
             <li>ReactJS</li>
             <li>NPM</li>
             <li>TypeScript</li>
           </ul>
         </div>
-		<br />
+        <br />
         <div>
           <h1 className="ml-6">Backend Tools</h1>
           <ul className="grid grid-cols-4 gap-2 mx-6">
@@ -61,17 +68,12 @@ export default function BlogPage() {
             <li>Prisma</li>
             <li>NextAuth</li>
             <li>Clerk</li>
-			<li>RESTful API&apos;s</li>
+            <li>RESTful API&apos;s</li>
           </ul>
         </div>
-		<br />
-		<div>
-          <h1 className="ml-6">Fullstack Framework</h1>
-          <ul className="flex flex-row gap-2 justify-center">
-            <li>NextJS</li>
-          </ul>
-        </div>
-		<br />
+        <br />
+
+        <br />
         <div>
           <h1 className="ml-6">Other Tools</h1>
           <ul className="grid grid-cols-4 gap-2 mx-6">
@@ -82,9 +84,9 @@ export default function BlogPage() {
           </ul>
         </div>
       </div>
-	  <footer className="w-full flex items-center justify-center py-12">
-				<HomeNav />
-			</footer>
+      <footer className="w-full flex items-center justify-center py-12">
+        <HomeNav />
+      </footer>
     </div>
   );
 }
