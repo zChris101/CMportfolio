@@ -25,7 +25,7 @@ export default function DocsPage() {
         </div>
       </div>
 
-      <footer className="w-full flex items-center justify-center py-12">
+      <footer className="w-full flex items-center justify-center py-4">
         <HomeNav />
       </footer>
     </>
