@@ -8,7 +8,7 @@ export default function DocsPage() {
   return (
     <>
       <div className="">
-        <div className="w-full flex flex-col items-center">
+       
           {ProjectData.map((item, index) => (
             <ProjectCard
               key={index}
@@ -20,9 +20,10 @@ export default function DocsPage() {
               appbrf={item.appbrf}
               hlink={item.hlink}
               desc={item.description}
+              textcolor={item.dark}
             />
           ))}
-        </div>
+        
       </div>
 
       <footer className="w-full flex items-center justify-center py-4">
