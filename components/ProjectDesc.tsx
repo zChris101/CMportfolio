@@ -1,3 +1,4 @@
+'use client'
 import { Textarea } from "@nextui-org/input";
 
 interface ProjectDescProps {

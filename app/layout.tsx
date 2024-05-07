@@ -1,3 +1,5 @@
+
+
 import "@/styles/globals.css";
 import { Metadata } from "next";
 import { siteConfig } from "@/config/site";
@@ -24,6 +26,8 @@ export default function RootLayout({
 }: {
 	children: React.ReactNode;
 }) {
+
+	
 	return (
 		<html lang="en" suppressHydrationWarning>
 			<head />

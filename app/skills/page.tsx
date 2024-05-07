@@ -1,3 +1,5 @@
+'use client'
+
 import HomeNav from "@/components/HomeNav";
 
 export default function BlogPage() {
