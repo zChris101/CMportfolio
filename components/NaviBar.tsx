@@ -17,28 +17,28 @@ const NaviBar = () => {
     gap-2
     "
     >
-      <Link href={""}>
+      <Link href='/about'>
         <div className="flex flex-row items-center">
           <CgProfile size={22} />
           <span className="text-sm font-light">About</span>
         </div>
       </Link>
 
-      <Link href={""}>
+      <Link href='/skills'>
         <div className="flex flex-row items-center">
           <GiSkills size={22} />
           <span className="text-sm font-light">Skills</span>
         </div>
       </Link>
 
-      <Link href={""}>
+      <Link href='projects'>
         <div className="flex flex-row items-center">
           <GoProjectSymlink size={22} />
           <span className="text-sm font-light">Projects</span>
         </div>
       </Link>
 
-      <Link href={""}>
+      <Link href='/blog'>
         <div className="flex flex-row items-center">
           <FaBloggerB size={22} />
           <span className="text-sm font-light">Blog</span>

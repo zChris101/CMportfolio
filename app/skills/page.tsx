@@ -1,4 +1,12 @@
+"use client";
+
 import HomeNav from "@/components/HomeNav";
+import Icon from "@/components/Icon";
+import { FrontendIcons } from "@/libs/data";
+import { BackendIcons } from "@/libs/data";
+import { otherIcons } from "@/libs/data";
+import { frameworkicons } from "@/libs/data";
+import { Planguage } from "@/libs/data";
 
 export default function BlogPage() {
   return (
@@ -23,64 +31,79 @@ export default function BlogPage() {
         </p>
       </div>
       <br />
-      <div>
+      <div className="gap-12 md:grid md:grid-cols-2 md:gap-12">
+        {/* Programming Language */}
         <div>
-          <h1 className="ml-6">Programming language</h1>
-          <ul className="grid grid-cols-4 gap-2 mx-6">
-            <li>Javascript</li>
-            <li>NodeJS</li>
-            <li>C</li>
-            <li>C#</li>
+          <h1 className="ml-6 my-6">Programming language</h1>
+          <ul className="grid grid-cols-4 gap-4 mx-6">
+            {Planguage.map((item, index) => (
+              <Icon
+                key={index}
+                icon={item.iconname}
+                iconspan={item.iconspan}
+                iconsize={item.iconsize}
+              />
+            ))}
           </ul>
         </div>
-        <br />
-        <div>
-          <h1 className="ml-6">Fullstack Framework</h1>
-          <ul className="flex flex-row gap-2 justify-center">
-            <li>NextJS</li>
-          </ul>
-        </div>
-        <br />
-        <div className="">
-          <h1 className="ml-6">FrontEnd Tools</h1>
-          <ul className="grid grid-cols-4 gap-2 mx-6">
-            <li>HTML</li>
-            <li>CSS</li>
-            <li>SASS</li>
-            <li>Tailwind</li>
-            <li>ShadcnUI</li>
-            <li>NextUI</li>
-            <li>ReactJS</li>
-            <li>NPM</li>
-            <li>TypeScript</li>
-          </ul>
-        </div>
-        <br />
-        <div>
-          <h1 className="ml-6">Backend Tools</h1>
-          <ul className="grid grid-cols-4 gap-2 mx-6">
-            <li>NodeJS</li>
-            <li>PostMan</li>
-            <li>TypeScript</li>
-            <li>MongoDB</li>
-            <li>Mongoose</li>
-            <li>Pusher</li>
-            <li>Prisma</li>
-            <li>NextAuth</li>
-            <li>Clerk</li>
-            <li>RESTful API&apos;s</li>
-          </ul>
-        </div>
-        <br />
 
-        <br />
+        {/* Fullstack Framework */}
         <div>
-          <h1 className="ml-6">Other Tools</h1>
-          <ul className="grid grid-cols-4 gap-2 mx-6">
-            <li>Git</li>
-            <li>Github</li>
-            <li>Linux</li>
-            <li>bash</li>
+          <h1 className="ml-6 my-6">Fullstack Framework</h1>
+          <ul className="flex flex-row gap-2 justify-center">
+            {frameworkicons.map((item, index) => (
+              <Icon
+                key={index}
+                icon={item.iconname}
+                iconspan={item.iconspan}
+                iconsize={item.iconsize}
+              />
+            ))}
+          </ul>
+        </div>
+
+        {/* FrontEnd Tools */}
+        <div>
+          <h1 className="ml-6 my-6">FrontEnd Tools</h1>
+          <ul className="grid grid-cols-4 gap-4 mx-6">
+            {FrontendIcons.map((item, index) => (
+              <Icon
+                key={index}
+                icon={item.iconname}
+                iconspan={item.iconspan}
+                iconsize={item.iconsize}
+              />
+            ))}
+          </ul>
+        </div>
+
+        {/* BackEnd Tools */}
+        <div>
+          <h1 className="ml-6 my-6">Backend Tools</h1>
+          <ul className="grid grid-cols-4 gap-4 mx-6">
+            {BackendIcons.map((item, index) => (
+              <Icon
+                key={index}
+                icon={item.iconname}
+                iconspan={item.iconspan}
+                iconsize={item.iconsize}
+              />
+            ))}
+          </ul>
+        </div>
+
+        {/* Other Tools */}
+        <div>
+          <h1 className="ml-6 my-6">Other Tools</h1>
+          <ul className="grid grid-cols-4 gap-4 mx-6">
+            {otherIcons.map((item, index) => (
+              <Icon
+                key={index}
+                icon={item.iconname}
+                iconspan={item.iconspan}
+                iconsize={item.iconsize}
+              />
+            ))}
           </ul>
         </div>
       </div>
