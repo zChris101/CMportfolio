@@ -31,6 +31,7 @@ export default function BlogPage() {
         </p>
       </div>
       <br />
+      
       <div className="gap-12 md:grid md:grid-cols-2 md:gap-12">
         {/* Programming Language */}
         <div>
@@ -107,6 +108,7 @@ export default function BlogPage() {
           </ul>
         </div>
       </div>
+
       <footer className="w-full flex items-center justify-center py-12">
         <HomeNav />
       </footer>
