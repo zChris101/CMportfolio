@@ -8,21 +8,21 @@ import { BsGithub } from "react-icons/bs";
 const HomeNav = () => {
   return (
     <div className="mt-8 flex flex-row gap-3">
-      <Link href={""}>
+      <Link href='https://www.linkedin.com/in/chrsmsco12/'>
         <div className="flex flex-row items-center gap-1 ">
           <BsLinkedin size={22} />
           <span className="hidden sm:flex">LinkedIn</span>
         </div>
       </Link>
 
-      <Link href={""}>
+      <Link href='https://www.discordapp.com/users/zchris101'>
         <div className="flex flex-row items-center gap-1 ">
           <BsDiscord size={22} />
           <span className="hidden sm:flex">Discord</span>
         </div>
       </Link>
 
-      <Link href={""}>
+      <Link href='https://github.com/zChris101'>
         <div className="flex flex-row items-center gap-1 ">
           <BsGithub size={22} />
           <span className="hidden sm:flex">Github</span>
